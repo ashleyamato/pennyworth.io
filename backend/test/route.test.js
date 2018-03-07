@@ -36,9 +36,9 @@ suite('CRUD routes', () => {
       }, done);
     });
 
-    test('GET /pennyworths/:id should respond with an error if an id is not found.', (done) => {
+    test('GET /pennyworkers/:id should respond with an error if an id is not found.', (done) => {
       request(server)
-        .get('/pennyworths/5')
+        .get('/pennyworkers/5')
         .set('Accept', 'application/json')
         .expect('Content-Type', /json/)
         .expect(404, { error: "not found" }, done);
@@ -61,7 +61,7 @@ suite('CRUD routes', () => {
             "last_name": "Amato",
             "email": "ashleyamato1@gmail.com",
             "token": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
-            "pennyworth_id": 1,
+            "pennyworker_id": 1,
             "address": "1111 Bear Mountain Dr, Boulder, CO, 80303",
             "services": [
               {
@@ -86,7 +86,7 @@ suite('CRUD routes', () => {
             "last_name": "Burgener",
             "email": "livburgener@gmail.com",
             "token": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
-            "pennyworth_id": 2,
+            "pennyworker_id": 2,
             "address": "2222 Chiron Street , Lafayette, CO, 80026",
             "services": [
               {
@@ -104,7 +104,7 @@ suite('CRUD routes', () => {
             "last_name": "Marovich",
             "email": "eddiemarovich@gmail.com",
             "token": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824",
-            "pennyworth_id": 2,
+            "pennyworker_id": 2,
             "address": "1111 Lovin It Lane, Boulder, CO, 80303",
             "services": [
               {
