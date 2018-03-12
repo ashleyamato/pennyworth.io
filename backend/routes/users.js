@@ -16,7 +16,6 @@ router.get('/', (req, res, next) => {
 })
 
 router.post('/', (req, res, next) => {
-  console.log('in post');
   return knex('users')
   .insert({
     first_name: req.body.first_name,
