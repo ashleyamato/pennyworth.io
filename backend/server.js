@@ -2,7 +2,7 @@ let express = require('express')
 let cors = require('cors')
 let app = express()
 let services = require('./routes/services')
-let pennyworths = require('./routes/pennyworths')
+let pennyworkers = require('./routes/pennyworkers')
 let users_services = require('./routes/users_services')
 let users = require('./routes/users')
 
@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.use('/services', services)
-app.use('/pennyworths', pennyworths)
+app.use('/pennyworkers', pennyworkers)
 app.use('/users_services', users_services)
 app.use('/users', users)
 

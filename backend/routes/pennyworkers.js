@@ -5,7 +5,7 @@ const router = express.Router()
 const knex = require('../knex')
 
 router.get('/', (req, res, next) => {
-   return knex('pennyworths')
+   return knex('pennyworkers')
   .select('*')
   .then(data => {
     res.send(data)
@@ -17,7 +17,7 @@ router.get('/', (req, res, next) => {
 
 router.get('/:id', (req,res,next) => {
   let id = req.params.id
-  return knex('pennyworths')
+  return knex('pennyworkers')
   .where('id', id)
   .select('id', 'first_name', 'last_name')
   .then(data => {
