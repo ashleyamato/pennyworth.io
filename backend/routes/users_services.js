@@ -5,8 +5,8 @@ const router = express.Router()
 const knex = require('../knex')
 const admin = require('firebase-admin')
 
-const dbURL = 'http://localhost:3001' // or database url
-const serviceAccount = './config/pennyworth-cd634770f026.json' // get this file from firebase
+const dbURL = 'http://localhost:3001'
+const serviceAccount = './config/pennyworth-cd634770f026.json'
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
@@ -36,9 +36,9 @@ router.get('/', (req, res, next) => {
   })
 })
 
-
 router.get('/:id', (req, res, next) => {
   let token = req.params.id
+
   admin.auth().verifyIdToken(`${token}`)
     .then(decodedToken => {
       let uid = decodedToken.uid
@@ -46,7 +46,6 @@ router.get('/:id', (req, res, next) => {
       .select('id', 'first_name', 'last_name', 'email', 'pennyworker_id', 'address')
       .where('token', uid)
       .then(users => {
-        console.log(users)
         let promises = users.map(user => {
           return knex('services')
             .select('services.id', 'services.label')
