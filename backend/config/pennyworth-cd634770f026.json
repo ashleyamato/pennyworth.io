@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pennyworth-2270a",
+  "private_key_id": "cd634770f026361fcfb9d4d8034323ee68c56a2f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC128CnADdNRsTK\nhG6DXTcJMikT12GOJvwwARfasIn7pFaecc10ShUYNwp57L0YDDgqeRPL79solCiz\nL2k06scCbVF5OGRaR10iHxliaPqZXKNPSQaAYH7aJuS+X/E1dc2JkEd3qc7633bw\nYRNWzMc1I8lHwdHIOIGgHzDYFlRKdfbGIUo508KWC7XDGoEd3FWwit+61P+xoIb+\n/PvMBn9Knj02mlgui9a6rQnqcAwJ+/Dv3iAylWli6m60ox26T7DUnr4ANwegu6/O\nYlHpHUckRyDxFNqjB6owcswzTc6TkMLWfb00cpGlhTo8iwq9AzCpTR3+k5scwd/Q\nRKl0GfZRAgMBAAECggEAAUky7nYLLhCfysckc+ktvt18BQqlwzL7NLNb8efZK0PG\neVuDJn0b8z5NDz8muCaP+Bw/5lYwGx7vFGieVRQ1ljVj2S2rp1LFXGd9ZGDV0s32\nTqoiHGLHoC8cY3c7YKjQVwEY7EZHCHxE3klwG6dE36ySMLUfZgvLk4WyRfjkctv/\nGrs6IJdJe2kd0PMGY8t6zdhaEBwoR0vGT76u1cOXjoj8p8QqBXwCvKn3eQUB8ugN\nHhZjCZSV6gWe7DCZ8ENjPFtmIgt6r6EcwGM2jx+DYt3U6MCGuvkr9J2fem9Pq0r2\nLS0GXlI9S04AS2QUiVCmrgUweJO/zKD2tKHlBaOB9QKBgQD1m3tCQBjfMlKiZx7C\n4JCIOAzOVtSSz833xIwJ8JisFAE3GYU9P99voEVuRHk4IjfaLBwezkqnn8UBSpJJ\nkuFdCI5MWxspMrXDITfJYsBjb/gOZRqXo+FrEd/1k5E8qW1nkC0bOfVneaYWrm1b\n2E9jpUeFtzN2VdkYkW/qMYjtdQKBgQC9jbd24csNWzK2bLCQoFfa6uUlEZHRraK3\nRJJp/c+zv1AWIckgd2zj8gL+CE44K7aiLHwZ/hKY6nyaIHFWyKYrDyea4JHpscKA\n0RfH0jwD8vroDm4YXluMWGVlZGv/X8bveiGPguw6rGwK/HBPVjZ/KwooOIXSiLV+\nr/m4SlR97QKBgQCHYPiEAAi1nmtmESknidig/SQx6DKr6ddCJxh5siC1WSGCWZLT\nvA1Q3irnKN8YTeQzYfTuFg+YbbyNhak03L1UJo8pD17dSpJdyEWTv9cD+Ifmh1wt\nEawC9ItaNcjsgwdG+nWieEQIkUk3X1XwNj8sUcImtmCrbY6IuEHT+RHcsQKBgHUx\nlFes/ESSuQTuqC+S4x6XkfrcJQK1Tt/uRnO/l9XzF4nHc7ld/PXloBH9gpbZ9/3G\ncSgE3OysNUN5gXl9brc6lGr+I1iQLchE/mXtxmtOo/ArU8g/NmzMDkykzNzEE5Pm\nN6+p63HPPrGAJ9P1YpY3Pv1lDOAA4+2i0UsusZR1AoGBALk1HhmLETpBJejspd7j\niTP/8XQr7FPKr0Naz0benjv+2uGXl+Qau8MwbJk1Qhm8SW59pMLcEhtaL5mENKWw\n10c6cjpYeUMzOqKtrKPqrdxHSlR+k9LN2e7UsjYHL3Z2RXBHbUTrtdDHoM2yJTJM\nYjR6eyFn53Q8VSkuwwwwBsQN\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-sfqwd@pennyworth-2270a.iam.gserviceaccount.com",
+  "client_id": "114364226145211518022",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-sfqwd%40pennyworth-2270a.iam.gserviceaccount.com"
+}
