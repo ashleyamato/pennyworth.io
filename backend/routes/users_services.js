@@ -61,7 +61,7 @@ router.get('/:id', (req, res, next) => {
             })
         })
         Promise.all(promises).then(results => {
-          res.status(200).json(results)
+          res.status(200).json(results[0])
         })
       })
     })
