@@ -61,7 +61,7 @@ router.get('/:id', (req, res, next) => {
             })
         })
         Promise.all(promises).then(results => {
-          res.status(200).json(results)
+          res.status(200).json(results[0])
         })
       })
     })
@@ -69,18 +69,30 @@ router.get('/:id', (req, res, next) => {
 })
 
 router.patch('/:id', (req, res, next) => {
-  let id =req.params.id
+  let id = req.params.id
   let body = req.body
-  console.log(req.body)
+
   return knex('users_services')
-  .where('id', id)
-  .update('notes', body.notes)
-  .returning('*')
-  .then((results) => {
-    res.status(200).send(results[0])
-  })
+    .where('id', id)
+    .update('notes', body.notes)
+    .returning('*')
+    .then((results) => {
+      res.status(200).send(results[0])
+    })
 })
 
-
+router.post('/', (req, res, next) => {
+  return knex('user_services')
+    .insert({
+      user_id:req.body.user_id,
+      services_id:req.body.services_id,
+      notes:req.body.notes,
+      date:req.body.date,
+      time:req.body.time
+    }, '*')
+    .then(data => {
+      res.status(204).send({data})
+    })
+})
 
 module.exports = router

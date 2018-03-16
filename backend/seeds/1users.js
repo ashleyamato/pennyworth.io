@@ -2,7 +2,7 @@
 exports.seed = function(knex, Promise) {
     return knex('users').insert([
       {id: 1, first_name: 'Ashley', last_name: 'Amato', email: 'ashleyamato1@gmail.com',
-        token: '2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824',
+        token: 'MJTZYgGrf5MmdaLdPtXORTADpaV2',
         pennyworker_id: 1, address: '1111 Bear Mountain Dr, Boulder, CO, 80303'},
       {id: 2, first_name: 'Olivia', last_name: 'Burgener', email: 'livburgener@gmail.com',
         token: '2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824',
