@@ -82,13 +82,12 @@ router.patch('/:id', (req, res, next) => {
 })
 
 router.post('/', (req, res, next) => {
-  return knex('user_services')
+  return knex('users_services')
     .insert({
       user_id:req.body.user_id,
-      services_id:req.body.services_id,
+      service_id:req.body.service_id,
       notes:req.body.notes,
       date:req.body.date,
-      time:req.body.time
     }, '*')
     .then(data => {
       res.status(204).send({data})
