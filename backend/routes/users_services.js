@@ -18,7 +18,7 @@ router.get('/', (req, res, next) => {
   .then(users => {
     let promises = users.map(user => {
       return knex('services')
-        .select('services.id', 'services.label', 'users_services.notes', 'users_services.date', 'users_services.time')
+        .select('services.id', 'services.label', 'users_services.notes', 'users_services.date')
         .join('users_services', 'services.id', 'users_services.service_id')
         .where('users_services.user_id', user.id)
         .then(services => {
@@ -50,7 +50,7 @@ router.get('/:id', (req, res, next) => {
             .select('services.id', 'services.label')
             .join('users_services', 'services.id', 'users_services.service_id')
             .where('users_services.user_id', user.id)
-            .select('users_services.notes', 'users_services.date', 'users_services.time')
+            .select('users_services.notes', 'users_services.date')
             .then(services => {
               user.services = services
               return user
