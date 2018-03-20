@@ -5,6 +5,7 @@ let services = require('./routes/services')
 let pennyworkers = require('./routes/pennyworkers')
 let users_services = require('./routes/users_services')
 let users = require('./routes/users')
+let custom_services = require('./routes/custom_services')
 
 let bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({extended:false}))

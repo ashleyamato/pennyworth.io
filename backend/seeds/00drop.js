@@ -4,4 +4,5 @@ exports.seed = function(knex, Promise) {
     .then(() => knex('users').del())
     .then(() => knex('services').del())
     .then(() => knex('pennyworkers').del())
+    .then(() => knex('custom_services').del())
 }

@@ -93,4 +93,37 @@ router.post('/', (req, res, next) => {
     })
 })
 
+
+router.get('/custom_services/:id', (req, res, next) => {
+  let token = req.params.id
+
+  admin.auth().verifyIdToken(`${token}`)
+    .then(decodedToken => {
+      let uid = decodedToken.uid
+      knex('users')
+      .select('id', 'first_name', 'last_name', 'email', 'pennyworker_id', 'address')
+      .where('token', uid)
+      .then(users => {
+        console.log(users)
+        let promises = users.map(user => {
+          return knex('custom_services')
+            .select('*')
+            .where('custom_services.user_id', user.id)
+            .then(services => {
+              user.services = services
+              return user
+            })
+            .catch((err) => {
+              next(err)
+            })
+        })
+        Promise.all(promises).then(results => {
+          res.status(200).json(results[0])
+        })
+      })
+    })
+    .catch(error => console.log('error', error))
+})
+
+
 module.exports = router
